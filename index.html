@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-  		<meta charset="utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  		<link rel="stylesheet" href="style.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     	<link rel="icon" href="Corona.jpg" />
     	<meta name="viewport" content="width=device-width, initial-scale=1" />
     	<meta name="theme-color" content="#000000" />
@@ -22,88 +22,86 @@
 <!-- Header portion  	  	 -->
 
   	<header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="navbar-brand">
-            <h1>Corona Stats</h1>
-          </div>
-        </div>   
-      </div>
-    </nav>
+    		<nav id="header-nav" class="navbar navbar-default">
+      			<div class="container">
+        			<div class="navbar-header">
+          				<div class="navbar-brand">
+           					<h1>Corona Stats</h1>
+         				</div>
+       				 </div>   
+     			</div>
+    		</nav>
     	
 
  <!-- Card portion   	    -->
 
-	<div class="card-deck" >
-    	<div class="card style=" width:12rem height:14rem " bg-light">
-    		<img class="card-img-top-center" src="infected.webp" alt="Card image cap">
-      		<div class="card-body text-center">
-        		<p class="card-text" id="ta">Total Infected People</p>
-        		<p class="card-text" id="infected">Placeholder</p>   
-        	</div>
-    	</div>
-    	<div class="card style=" width:12rem height:14rem " bg-light">
-    		<img class="card-img-top-center" src="restored.webp" alt="Card image cap">
-      		<div class="card-body text-center">
-        		<p class="card-text" id="tb">Recovered </p>
-        		<p class="card-text" id="recovered">Placeholder</p>
-      		</div>
-    	</div>
-    	<div class="card style=" width:12rem height:14rem" bg-light">
-    		<img class="card-img-top-center"  src="death.webp" alt="Card image cap">
-      		<div class="card-body text-center">
-        		<p class="card-text" id="tc">Deaths</p>
-        		<p class="card-text" id="deaths">Placeholder</p>
-     	    </div>
-    	</div>
- 	</div>   
+		<div class="card-deck" >
+    			<div class="card style=" width:12rem height:14rem " bg-light">
+    				<img class="card-img-top-center" src="infected.webp" alt="Card image cap">
+      				<div class="card-body text-center">
+        				<p class="card-text" id="ta">Total Infected People</p>
+        				<p class="card-text" id="infected">Placeholder</p>   
+        			</div>
+    			</div>
+			<div class="card style=" width:12rem height:14rem " bg-light">
+				<img class="card-img-top-center" src="restored.webp" alt="Card image cap">
+				<div class="card-body text-center">
+					<p class="card-text" id="tb">Recovered </p>
+					<p class="card-text" id="recovered">Placeholder</p>
+				</div>
+			</div>
+			<div class="card style=" width:12rem height:14rem" bg-light">
+				<img class="card-img-top-center"  src="death.webp" alt="Card image cap">
+				<div class="card-body text-center">
+					<p class="card-text" id="tc">Deaths</p>
+					<p class="card-text" id="deaths">Placeholder</p>
+				</div>
+			</div>
+ 		</div>   
 
 
 
 <!-- Select Country option -->
 
-    <div class="container">
-    	<div class="form-group col-md-4">
-        	<label for="inputState" >Select Country</label>
-      	    <select id="inputState" class="form-control">
-           		 <option selected disabled value="Worldwide">Worldwide</option>
-            </select>
-   	    </div>
-	</div>
+		<div class="container">
+			<div class="form-group col-md-4">
+				<label for="inputState" >Select Country</label>
+				<select id="inputState" class="form-control">
+					 <option selected disabled value="Worldwide">Worldwide</option>
+				</select>
+			</div>
+		</div>
 
 
 
 <!-- Select state option is hidden until a country is chosen -->
  
 
-    <div  class="container"  >
-    	<div id="id1" class="form-group col-md-4" >
-      		<label for="inputState" >Select State</label>
-      		<select id="inputState2" class="form-control">
-        		<option selected disabled value="Nationwide">Nationwide</option>
-      		</select>
-    	</div>
-    </div>
+	    <div  class="container"  >
+		<div id="id1" class="form-group col-md-4" >
+			<label for="inputState" >Select State</label>
+			<select id="inputState2" class="form-control">
+				<option selected disabled value="Nationwide">Nationwide</option>
+			</select>
+		</div>
+	    </div>
 
 
 
 <!-- Chart of corona cases -->
 
-    <div class="container">
-    	<canvas id="myChart" width="400" height="400"></canvas>
-    </div>
+	    <div class="container">
+		<canvas id="myChart" width="400" height="400"></canvas>
+	    </div>
 
-   
+	</header>   
 
 <footer class="page-footer font-small green">
+	  <!-- Copyright -->
+	  <div class="footer-copyright text-center py-3">Created By: Roshan Jha
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Created By: Roshan Jha
-    
-  </div>
-  <!-- Copyright -->
-
+	  </div>
+	  <!-- Copyright -->
 </footer>
 <!-- Footer -->
 
@@ -142,16 +140,16 @@
 
 			$.ajax({
 				type: "GET",  
-          	    url: "https://covid19.mathdro.id/api/countries",   
-                success: function (res) {  
-                var countries='';  
-                for (var i = 0; i < res.countries.length; i++) {  
-                   countries += '<option value="' + res.countries[i].name + '">'+res.countries[i].name+'</option>';  
-                }  
-               	// console.log(countries);
-                $('#inputState').append(countries);
-                // console.log(res);
-                }  
+          	    		url: "https://covid19.mathdro.id/api/countries",   
+                		success: function (res) {  
+               			var countries='';  
+				for (var i = 0; i < res.countries.length; i++) {  
+				   countries += '<option value="' + res.countries[i].name + '">'+res.countries[i].name+'</option>';  
+				}  
+               			// console.log(countries);
+				$('#inputState').append(countries);
+				// console.log(res);
+				}  
 			});
 			$('#inputState').on('change',function(){
 				var country = $(this).val();
@@ -159,43 +157,41 @@
 				var ur = "https://covid19.mathdro.id/api/countries/"+country;
 				var url="https://covid19.mathdro.id/api/countries/"+country+"/confirmed";
 				$.ajax({
-			    url: ur ,
-			    type: 'GET',
-			    success: function(res) {
-			    	var infected = res.confirmed.value;
-			    	var recovered = res.recovered.value;
-			    	var deaths =  res.deaths.value;
-			    	$('#infected').html(infected);
-			    	$('#recovered').html(recovered);
-			    	$('#deaths').html(deaths);
-			    	$('#id1').show();
-			    	
-			    	$.ajax({
-						type: "GET",  
-	          	    	url: url,   
-	                	success: function (res) {  
-	                		console.log(res);
-	                	var states='<option value="DEFAULT" disabled selected>Nationwide</option>';
-	                	for (var i = 0; i < res.length; i++) {  
-	                		// console.log(res[i].provinceState);
-	                		if(res[i].provinceState!=null){
+			    	    url: ur ,
+				    type: 'GET',
+				    success: function(res) {
+					var infected = res.confirmed.value;
+					var recovered = res.recovered.value;
+					var deaths =  res.deaths.value;
+					$('#infected').html(infected);
+					$('#recovered').html(recovered);
+					$('#deaths').html(deaths);
+					$('#id1').show();
 
-	                   			states += '<option value="' + res[i].provinceState + '">'+res[i].provinceState+'</option>'; 
-	                   		}
-	                }  
-	               	// console.log(countries);
-	               	$('#inputState2').empty().append(states);
-	                // console.log(res);
-	                }  
-				});
-			    },
-			    error: function(data){
-			    	alert("Some issue in API.")
-			    }
-			}); 
+					$.ajax({
+							type: "GET",  
+					url: url,   
+					success: function (res) {  
+						console.log(res);
+					var states='<option value="DEFAULT" disabled selected>Nationwide</option>';
+					for (var i = 0; i < res.length; i++) {  
+						// console.log(res[i].provinceState);
+						if(res[i].provinceState!=null){
+
+							states += '<option value="' + res[i].provinceState + '">'+res[i].provinceState+'</option>'; 
+						}
+				}  
+				// console.log(countries);
+				$('#inputState2').empty().append(states);
+				// console.log(res);
+				}  
+					});
+				    },
+				    error: function(data){
+					alert("Some issue in API.")
+				    }
+				}); 
 			});
-
-
 
 			$('#inputState2').on('change',function(){
 			    	var state = $(this).val();
@@ -221,8 +217,6 @@
 			    	}
 			    	});
 			    });
-
-		
 		});  
 	</script>
 
